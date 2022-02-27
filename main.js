@@ -28,8 +28,7 @@ classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models
       
   function check()
   {
-    img = document.getElementById('captured_image');
-    classifier.classify(img, gotResult);
+   
   }
 
 function gotResult(error, results) {
@@ -38,7 +37,7 @@ function gotResult(error, results) {
   } else {
     console.log(results);
     
-    document.getElementById("result_object_name").innerHTML = results[0].label;
+    document.getElementById("result_object_name").innerHTML = ;
 
     gesture = results[0].label;
     
@@ -66,12 +65,6 @@ function gotResult(error, results) {
 
 
 function speak(){
-    var synth = window.speechSynthesis;
-
-    speak_data = toSpeak;
-
-    var utterThis = new SpeechSynthesisUtterance(speak_data);
-
-    synth.speak(utterThis);
+  
 
 }
